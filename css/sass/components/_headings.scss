@@ -1,0 +1,95 @@
+/* start header head */
+
+header {
+    h1 {
+        color: $darkColor;
+    }
+}
+
+
+/* end header head  */
+
+
+/* companies head */
+
+.companies {
+    h2 {
+        @include firstHeading;
+    }
+}
+
+
+/* about head */
+
+.about {
+    h3 {
+        @include thirdHeading;
+    }
+    h2 {
+        @include secondHeading;
+    }
+}
+
+
+/* services head */
+
+.services {
+    h2 {
+        @include firstHeading;
+    }
+    h5 {
+        margin: 20px 0;
+        font-weight: $semiBold;
+    }
+}
+
+
+/* our projects head */
+
+.our-projects {
+    h2 {
+        @include firstHeading;
+    }
+}
+
+
+/* testimonials head */
+
+.testimonials {
+    h2 {
+        @include firstHeading;
+        display: inline;
+        margin-left: 20px;
+    }
+}
+
+
+/* contact us head */
+
+.contact-us {
+    h2 {
+        @include firstHeading;
+    }
+}
+
+
+/* footer headings */
+
+footer {
+    .footer-brand {
+        .brand {
+            color: $mainColor;
+            font: {
+                size: 40px;
+                weight: $veryBold;
+                family: $mainFont;
+            }
+        }
+    }
+    h4 {
+        color: $navBackground;
+        margin: 0;
+        padding-bottom: 25px;
+        margin-top: 30px;
+    }
+}

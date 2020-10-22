@@ -1,0 +1,85 @@
+/* main button */
+
+@mixin mainButton {
+    background: transparent;
+    color: $mainColor;
+    border: 1px solid $mainColor;
+    transition: $transition3s;
+    margin-right: 5px;
+    &:hover {
+        background: $mainColor;
+        color: $navBackground;
+    }
+}
+
+
+/* contact button */
+
+@mixin contactButton {
+    background: $mainColor;
+    color: $navBackground;
+    border: 1px solid $mainColor;
+    transition: $transition3s;
+    margin-right: 5px;
+    padding: 7px 30px;
+    &:hover {
+        color: $navBackground;
+    }
+}
+
+
+/* first heading */
+
+@mixin firstHeading {
+    margin-bottom: 50px;
+    font: {
+        family: $secFont;
+        weight: $semiBold;
+    }
+    span {
+        color: $mainColor;
+    }
+}
+
+
+/* second heading */
+
+@mixin secondHeading {
+    margin: 30px 0;
+    color: $secColor;
+    font: {
+        family: $secFont;
+        weight: $semiBold;
+    }
+}
+
+
+/* third heading */
+
+@mixin thirdHeading {
+    color: $mainColor;
+    position: relative;
+    font: {
+        family: $secFont;
+        weight: $semiBold;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        right: 0;
+        width: 34px;
+        height: 6px;
+        border-radius: 10px;
+        background: $mainColor;
+    }
+}
+
+
+/* main paragraph */
+
+@mixin mainParagraph {
+    margin: 30px 0;
+    color: $navLinkColor;
+    font-size: 19px;
+}

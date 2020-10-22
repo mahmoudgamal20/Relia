@@ -1,0 +1,41 @@
+/* colors */
+
+$navBackground:#ffffff;
+$mainColor:#108af9;
+$navLinkColor:#666;
+$secColor:#ee6f57;
+$darkColor: #10232f;
+$shadowColor:#dddddd;
+
+/* font-family */
+
+$mainFont:"Tajawal";
+$secFont:"Cairo";
+
+/* font-weight */
+
+$semiBold:600;
+$veryBold:900;
+
+/* margin */
+
+$headerMargin:200px;
+$mainMargin:100px;
+
+/* transition */
+
+$transition3s:all 0.3s ease-in-out;
+$transition5s:all 0.5s ease-in-out;
+
+/* box shadow */
+
+$boxShadow:2px 2px 5px $shadowColor;
+
+/* media queries */
+
+$phone:320px;
+$small:500px;
+$medium:576px;
+$maxMed:768px;
+$large:992px;
+$xLarge:1200px;

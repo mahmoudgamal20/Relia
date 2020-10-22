@@ -1,0 +1,33 @@
+/* start header */
+
+header {
+    margin-top: $headerMargin;
+    position: relative;
+    svg {
+        position: absolute;
+        bottom: 15em;
+        left: 0;
+        width: 50%;
+        z-index: -1;
+        @media(min-width: $phone) and(max-width: $xLarge) {
+            display: none;
+        }
+    }
+    h1 {
+        // styled in heading sheet
+    }
+    p {
+        @include mainParagraph;
+    }
+    .head-btn {
+        //styled in buttons sheet
+    }
+    img {
+        @media(min-width: $phone) and(max-width: $large) {
+            margin-top: 60px;
+        }
+    }
+}
+
+
+/* end header */

@@ -1,0 +1,761 @@
+/* colors */
+/* font-family */
+/* font-weight */
+/* margin */
+/* transition */
+/* box shadow */
+/* media queries */
+/* main button */
+/* contact button */
+/* first heading */
+/* second heading */
+/* third heading */
+/* main paragraph */
+/* start header */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Tajawal&display=swap");
+header {
+  margin-top: 200px;
+  position: relative;
+}
+
+header svg {
+  position: absolute;
+  bottom: 15em;
+  left: 0;
+  width: 50%;
+  z-index: -1;
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+  header svg {
+    display: none;
+  }
+}
+
+header p {
+  margin: 30px 0;
+  color: #666;
+  font-size: 19px;
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  header img {
+    margin-top: 60px;
+  }
+}
+
+/* end header */
+/* start header head */
+header h1 {
+  color: #10232f;
+}
+
+/* end header head  */
+/* companies head */
+.companies h2 {
+  margin-bottom: 50px;
+  font-family: "Cairo";
+  font-weight: 600;
+}
+
+.companies h2 span {
+  color: #108af9;
+}
+
+/* about head */
+.about h3 {
+  color: #108af9;
+  position: relative;
+  font-family: "Cairo";
+  font-weight: 600;
+}
+
+.about h3:before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  width: 34px;
+  height: 6px;
+  border-radius: 10px;
+  background: #108af9;
+}
+
+.about h2 {
+  margin: 30px 0;
+  color: #ee6f57;
+  font-family: "Cairo";
+  font-weight: 600;
+}
+
+/* services head */
+.services h2 {
+  margin-bottom: 50px;
+  font-family: "Cairo";
+  font-weight: 600;
+}
+
+.services h2 span {
+  color: #108af9;
+}
+
+.services h5 {
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+/* our projects head */
+.our-projects h2 {
+  margin-bottom: 50px;
+  font-family: "Cairo";
+  font-weight: 600;
+}
+
+.our-projects h2 span {
+  color: #108af9;
+}
+
+/* testimonials head */
+.testimonials h2 {
+  margin-bottom: 50px;
+  font-family: "Cairo";
+  font-weight: 600;
+  display: inline;
+  margin-left: 20px;
+}
+
+.testimonials h2 span {
+  color: #108af9;
+}
+
+/* contact us head */
+.contact-us h2 {
+  margin-bottom: 50px;
+  font-family: "Cairo";
+  font-weight: 600;
+}
+
+.contact-us h2 span {
+  color: #108af9;
+}
+
+/* footer headings */
+footer .footer-brand .brand {
+  color: #108af9;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Tajawal";
+}
+
+footer h4 {
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 25px;
+  margin-top: 30px;
+}
+
+/* navbar button */
+.navbar .btn {
+  background: transparent;
+  color: #108af9;
+  border: 1px solid #108af9;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-right: 5px;
+}
+
+.navbar .btn:hover {
+  background: #108af9;
+  color: #ffffff;
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .navbar .btn {
+    margin-top: 10px;
+  }
+}
+
+/*  head buttons */
+header .head-btn .btn {
+  background: #108af9;
+  color: #ffffff;
+}
+
+header .head-btn .btn:nth-of-type(2) {
+  background: transparent;
+  color: #108af9;
+  border: 1px solid #108af9;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-right: 5px;
+}
+
+header .head-btn .btn:nth-of-type(2):hover {
+  background: #108af9;
+  color: #ffffff;
+}
+
+/* about button */
+.about .btn {
+  background: transparent;
+  color: #108af9;
+  border: 1px solid #108af9;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-right: 5px;
+}
+
+.about .btn:hover {
+  background: #108af9;
+  color: #ffffff;
+}
+
+/* our projects button */
+.our-projects .card-btn {
+  color: #108af9;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-family: "Cairo";
+  font-weight: 600;
+}
+
+.our-projects .card-btn i {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.our-projects .card-btn:hover i {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  visibility: visible;
+}
+
+/* more projects button */
+.our-projects button {
+  margin-top: 30px;
+  padding: 5px 25px;
+  background: transparent;
+  color: #108af9;
+  border: 1px solid #108af9;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-right: 5px;
+}
+
+.our-projects button:hover {
+  background: #108af9;
+  color: #ffffff;
+}
+
+/* contact form button */
+.contact-form button {
+  background: #108af9;
+  color: #ffffff;
+  border: 1px solid #108af9;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-right: 5px;
+  padding: 7px 30px;
+}
+
+.contact-form button:hover {
+  color: #ffffff;
+}
+
+/* start global */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+}
+
+hr {
+  border: 0;
+  border-top: 0;
+  height: 0.5px;
+  background: #fff;
+}
+
+/* adjust scrollup */
+.scrollup {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 999;
+  display: none;
+}
+
+/* start adjust scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dddddd;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #108af9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 138, 249, 0.8);
+}
+
+/* end adjust scrollbar */
+/* start adjust the loader */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #10232f;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader .spinner {
+  width: 40px;
+  height: 40px;
+  -webkit-animation: sk-rotate 2.0s infinite linear;
+          animation: sk-rotate 2.0s infinite linear;
+}
+
+.loader .spinner .dot1,
+.loader .spinner .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #108af9;
+  border-radius: 100%;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+          animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.loader .spinner .dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1.0s;
+          animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes sk-rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+/* end adjust the loader */
+/* end global */
+/* start navabr */
+.navbar .navbar-brand {
+  color: #108af9;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Cairo";
+}
+
+.navbar .navbar-toggler {
+  border: 0;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url(../img/menu.svg);
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .navbar .navbar-collapse {
+    background: #ffffff;
+  }
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #666;
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-item .nav-link span {
+  position: absolute;
+  bottom: 3px;
+  right: 7px;
+  width: 0%;
+  height: 5px;
+  border-radius: 20px;
+  background: #108af9;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #108af9;
+  font-weight: 600;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover span {
+  width: 40%;
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .navbar .navbar-nav .nav-item .nav-link:hover span {
+    width: 5%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 7px;
+  }
+}
+
+/* end navbar */
+/* start companies */
+.companies {
+  margin-top: 200px;
+}
+
+.companies img {
+  padding: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .companies img {
+    padding: 20px;
+    width: 200px;
+  }
+}
+
+/* end companies */
+/* start about us */
+.about {
+  margin-top: 100px;
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .about .about-info {
+    margin-top: 50px;
+  }
+}
+
+.about .about-info p {
+  margin: 30px 0;
+  color: #666;
+  font-size: 19px;
+}
+
+/* end about us */
+/* start services */
+.services {
+  margin-top: 100px;
+}
+
+.services .service-info {
+  margin-bottom: 35px;
+  padding: 20px;
+  -webkit-box-shadow: 2px 2px 5px #dddddd;
+          box-shadow: 2px 2px 5px #dddddd;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.services .service-info i {
+  color: #108af9;
+}
+
+.services .service-info p {
+  color: #666;
+  font-family: "Cairo";
+}
+
+/* end services */
+/* start our projects */
+.our-projects {
+  margin-top: 100px;
+}
+
+.our-projects .card {
+  border: 0;
+  -webkit-filter: drop-shadow(0px 0px 5px #dddddd);
+          filter: drop-shadow(0px 0px 5px #dddddd);
+  margin-bottom: 30px;
+}
+
+.our-projects .card .card-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.our-projects .card .card-img img {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.our-projects .card .card-img img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.our-projects .card .card-body .card-title {
+  color: #108af9;
+}
+
+.our-projects .card .card-body .card-text {
+  color: #666;
+  font-family: "Cairo";
+  font-weight: 600;
+}
+
+.our-projects .card .card-body blockquote {
+  color: #10232f;
+  font-size: 17px;
+}
+
+.our-projects .hidden-row {
+  display: none;
+}
+
+/* end our projects */
+/* start testimonials */
+.testimonials {
+  margin-top: 100px;
+}
+
+.testimonials .carousel {
+  margin-top: 50px;
+}
+
+.testimonials .carousel .carousel-inner .carousel-item {
+  float: left;
+  font-family: "Cairo";
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.testimonials .carousel .carousel-inner .carousel-item img {
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonials .carousel .carousel-inner .carousel-item p {
+  color: #ee6f57;
+  margin: 20px 0;
+}
+
+.testimonials .carousel .carousel-inner .carousel-item span {
+  color: #10232f;
+  margin-bottom: 20px;
+}
+
+.testimonials .carousel-control-prev-icon {
+  background-image: url(../img/carousel-left.svg);
+  width: 30px;
+  height: 30px;
+}
+
+.testimonials .carousel-control-next-icon {
+  background-image: url(../img/carousel-right.svg);
+  width: 30px;
+  height: 30px;
+}
+
+.testimonials .carousel-control-prev,
+.testimonials .carousel-control-next {
+  opacity: 1;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .testimonials .carousel-control-prev,
+  .testimonials .carousel-control-next {
+    display: none;
+  }
+}
+
+/* end testimonials */
+/* start contact us */
+.contact-us {
+  margin-top: 100px;
+}
+
+.contact-us .contact {
+  -webkit-box-shadow: 2px 2px 5px #dddddd;
+          box-shadow: 2px 2px 5px #dddddd;
+  padding: 20px;
+  font-family: "Cairo";
+  font-weight: 600;
+}
+
+.contact-us .contact i {
+  padding: 20px;
+}
+
+.contact-us .contact .fa-headphones-alt {
+  color: #01c5c4;
+}
+
+.contact-us .contact .fa-envelope-open-text {
+  color: #d7385e;
+}
+
+.contact-us .contact .fa-map-marker-alt {
+  color: #f39233;
+}
+
+/* end contact us */
+/* start contact form */
+.contact-form {
+  margin-top: 100px;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  color: #108af9;
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #108af9;
+}
+
+/* end contact form */
+footer {
+  margin-top: 100px;
+  background: #10232f;
+  padding-top: 50px;
+  color: #dddddd;
+}
+
+footer p {
+  padding-bottom: 20px;
+  line-height: 1.7;
+}
+
+footer .footer-social i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+footer .footer-social i:hover {
+  background: #108af9;
+  color: #ffffff;
+  border: 1px solid #108af9;
+}
+
+footer ul {
+  padding-right: 0;
+}
+
+footer ul li a {
+  all: unset;
+  display: inline-block;
+  padding-bottom: 15px;
+  color: #dddddd;
+  cursor: pointer;
+}
+
+footer ul li a:hover {
+  text-decoration: none;
+  color: #108af9;
+}
+
+footer .footer-contact input {
+  border-radius: 0;
+}
+
+footer .footer-contact input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+footer .footer-contact .btn {
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 0;
+  background: #108af9;
+  margin-right: -5px;
+}
+
+footer .copyright {
+  padding-bottom: 20px;
+  font-family: "Cairo";
+  font-weight: 600;
+}
+
+footer .copyright span {
+  color: #108af9;
+}
+/*# sourceMappingURL=homepage.css.map */

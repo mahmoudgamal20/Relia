@@ -1,0 +1,77 @@
+/* navbar button */
+
+.navbar {
+    .btn {
+        @include mainButton;
+        @media(min-width: $phone) and(max-width: $large) {
+            margin-top: 10px;
+        }
+    }
+}
+
+
+/*  head buttons */
+
+header {
+    .head-btn {
+        .btn {
+            background: $mainColor;
+            color: $navBackground;
+            &:nth-of-type(2) {
+                @include mainButton;
+            }
+        }
+    }
+}
+
+
+/* about button */
+
+.about {
+    .btn {
+        @include mainButton;
+    }
+}
+
+
+/* our projects button */
+
+.our-projects {
+    .card-btn {
+        color: $mainColor;
+        transition: $transition3s;
+        font: {
+            family: $secFont;
+            weight: $semiBold;
+        }
+        i {
+            transform: translateX(5px);
+            transition: $transition3s;
+            visibility: hidden;
+        }
+        &:hover i {
+            transform: translateX(0);
+            visibility: visible;
+        }
+    }
+}
+
+
+/* more projects button */
+
+.our-projects {
+    button {
+        margin-top: 30px;
+        padding: 5px 25px;
+        @include mainButton;
+    }
+}
+
+
+/* contact form button */
+
+.contact-form {
+    button {
+        @include contactButton;
+    }
+}

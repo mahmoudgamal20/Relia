@@ -1,0 +1,306 @@
+/* start navabr */
+
+.navbar {
+    .navbar-brand {
+        color: $mainColor;
+        transition: $transition3s;
+        font: {
+            size: 25px;
+            weight: $semiBold;
+            family: $secFont;
+        }
+    }
+    .navbar-toggler {
+        border: 0;
+    }
+    .navbar-toggler-icon {
+        background-image: url(../img/menu.svg);
+    }
+    .navbar-collapse {
+        @media(min-width: $phone) and(max-width: $large) {
+            background: $navBackground;
+        }
+    }
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: $navLinkColor;
+                position: relative;
+                span {
+                    position: absolute;
+                    bottom: 3px;
+                    right: 7px;
+                    width: 0%;
+                    height: 5px;
+                    border-radius: 20px;
+                    background: $mainColor;
+                    transition: $transition3s;
+                }
+                &:hover {
+                    color: $mainColor;
+                    font-weight: $semiBold;
+                }
+                &:hover span {
+                    width: 40%;
+                    @media(min-width: $phone) and(max-width: $large) {
+                        width: 5%;
+                    }
+                }
+                @media(min-width:$phone) and(max-width:$large) {
+                    padding: 7px;
+                }
+            }
+        }
+    }
+    .btn {
+        // styled in buttons sheet
+    }
+}
+
+
+/* end navbar */
+
+
+/* start companies */
+
+.companies {
+    margin-top: $mainMargin * 2;
+    h2 {
+        //styled in heading, mixins sheet
+    }
+    img {
+        padding: 10px;
+        @media(min-width: $phone)and(max-width: $large) {
+            padding: 20px;
+            width: 200px;
+        }
+    }
+}
+
+
+/* end companies */
+
+
+/* start about us */
+
+.about {
+    margin-top: $mainMargin;
+    .about-info {
+        @media(min-width: $phone) and(max-width: $large) {
+            margin-top: 50px;
+        }
+        h3 {
+            // styled in heading, mixins sheet
+        }
+        h2 {
+            // styled in heading, mixins sheet
+        }
+        p {
+            @include mainParagraph;
+        }
+        .btn {
+            // styled in buttons sheet
+        }
+    }
+}
+
+
+/* end about us */
+
+
+/* start services */
+
+.services {
+    margin-top: $mainMargin;
+    h2 {
+        // styled in heading, mixins sheet
+    }
+    .service-info {
+        margin-bottom: 35px;
+        padding: 20px;
+        box-shadow: $boxShadow;
+        transition: $transition3s;
+        i {
+            color: $mainColor;
+        }
+        h5 {
+            // styled in heading sheet
+        }
+        p {
+            color: $navLinkColor;
+            font: {
+                family: $secFont;
+            }
+        }
+    }
+}
+
+
+/* end services */
+
+
+/* start our projects */
+
+.our-projects {
+    margin-top: $mainMargin;
+    h2 {
+        // styled in heading sheet
+    }
+    .card {
+        border: 0;
+        filter: drop-shadow(0px 0px 5px rgba($shadowColor, 1));
+        margin-bottom: 30px;
+        .card-img {
+            position: relative;
+            overflow: hidden;
+            img {
+                transition: $transition5s;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .card-body {
+            .card-title {
+                color: $mainColor;
+            }
+            .card-text {
+                color: $navLinkColor;
+                font: {
+                    family: $secFont;
+                    weight: $semiBold;
+                }
+            }
+            blockquote {
+                color: $darkColor;
+                font: {
+                    size: 17px;
+                }
+            }
+            .card-btn {
+                // styled in buttons sheet
+            }
+        }
+    }
+    .hidden-row {
+        display: none;
+    }
+    button {
+        // styled in buttons, mixins sheet
+    }
+}
+
+
+/* end our projects */
+
+
+/* start testimonials */
+
+.testimonials {
+    margin-top: $mainMargin;
+    .carousel {
+        margin-top: 50px;
+        // .carousel-indicators {
+        //     margin: 0;
+        //     bottom: -25px;
+        //     li {
+        //         background-color: $secColor;
+        //     }
+        // }
+        .carousel-inner {
+            .carousel-item {
+                float: left;
+                font: {
+                    family: $secFont;
+                    size: 17px;
+                    weight: $semiBold;
+                }
+                img {
+                    border-radius: 50%;
+                    transition: $transition3s;
+                }
+                p {
+                    color: $secColor;
+                    margin: 20px 0;
+                }
+                span {
+                    color: $darkColor;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .carousel-control-prev-icon {
+        background-image: url(../img/carousel-left.svg);
+        width: 30px;
+        height: 30px;
+    }
+    .carousel-control-next-icon {
+        background-image: url(../img/carousel-right.svg);
+        width: 30px;
+        height: 30px;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        opacity: 1;
+        @media(min-width: $phone) and(max-width: $small) {
+            display: none;
+        }
+    }
+}
+
+
+/* end testimonials */
+
+
+/* start contact us */
+
+.contact-us {
+    margin-top: $mainMargin;
+    .contact {
+        box-shadow: $boxShadow;
+        padding: 20px;
+        font: {
+            family: $secFont;
+            weight: $semiBold;
+        }
+        i {
+            padding: 20px;
+        }
+        .fa-headphones-alt {
+            color: #01c5c4;
+        }
+        .fa-envelope-open-text {
+            color: #d7385e;
+        }
+        .fa-map-marker-alt {
+            color: #f39233;
+        }
+    }
+}
+
+
+/* end contact us */
+
+
+/* start contact form */
+
+.contact-form {
+    margin-top: $mainMargin;
+    .form-group {
+        input,
+        textarea {
+            color: $mainColor;
+            &:focus {
+                box-shadow: none;
+                border: 1px solid $mainColor;
+            }
+        }
+    }
+    button {
+        // styled in buttons, mixins sheet 
+    }
+}
+
+
+/* end contact form */
